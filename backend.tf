@@ -1,4 +1,12 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
+
 terraform {
+
+
+
   backend "s3" {
     bucket         = "my-terraform-backend-krish"
     key            = "eks-velero/terraform.tfstate"
